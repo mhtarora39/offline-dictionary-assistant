@@ -1,0 +1,34 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest / Cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Checkpoints & Logs
+ner_trainer/model/checkpoints/
+logs/*.jsonl
+results/*.json
+results/*.csv
+results/*.jsonl
+
+# Temporary scratch scripts
+scratch/
+
+# Large intermediate training weights (optional; un-comment if using Git LFS)
+# ner_trainer/model/model.safetensors
+# ner_trainer/model/term_extractor.onnx
+
+# OS files
+.DS_Store
+Thumbs.db
