@@ -1,0 +1,151 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.offline.dictionary"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Permission required for native offline voice search -->
+12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+12-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:5:5-71
+12-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:5:22-68
+13
+14    <!-- Queries for on-device speech recognition and text-to-speech services -->
+15    <queries>
+15-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:8:5-15:15
+16        <intent>
+16-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:9:9-11:18
+17            <action android:name="android.speech.RecognitionService" />
+17-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:10:13-72
+17-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:10:21-69
+18        </intent>
+19        <intent>
+19-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:12:9-14:18
+20            <action android:name="android.intent.action.TTS_SERVICE" />
+20-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:13:13-72
+20-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:13:21-69
+21        </intent>
+22    </queries>
+23
+24    <permission
+24-->[androidx.core:core:1.12.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\c51b3d5ae35dd8dcbce77490723b6b96\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+25        android:name="com.offline.dictionary.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+25-->[androidx.core:core:1.12.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\c51b3d5ae35dd8dcbce77490723b6b96\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+26        android:protectionLevel="signature" />
+26-->[androidx.core:core:1.12.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\c51b3d5ae35dd8dcbce77490723b6b96\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+27
+28    <uses-permission android:name="com.offline.dictionary.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+28-->[androidx.core:core:1.12.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\c51b3d5ae35dd8dcbce77490723b6b96\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+28-->[androidx.core:core:1.12.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\c51b3d5ae35dd8dcbce77490723b6b96\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+29
+30    <application
+30-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:17:5-34:19
+31        android:allowBackup="true"
+31-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:18:9-35
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.12.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\c51b3d5ae35dd8dcbce77490723b6b96\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+33        android:debuggable="true"
+34        android:extractNativeLibs="false"
+35        android:icon="@mipmap/ic_launcher"
+35-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:19:9-43
+36        android:label="@string/app_name"
+36-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:20:9-41
+37        android:roundIcon="@mipmap/ic_launcher_round"
+37-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:21:9-54
+38        android:supportsRtl="true"
+38-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:22:9-35
+39        android:theme="@style/Theme.OfflineDictionary" >
+39-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:23:9-55
+40        <activity
+40-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:24:9-33:20
+41            android:name="com.offline.dictionary.MainActivity"
+41-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:25:13-41
+42            android:exported="true"
+42-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:26:13-36
+43            android:theme="@style/Theme.OfflineDictionary"
+43-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:28:13-59
+44            android:windowSoftInputMode="adjustResize" >
+44-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:27:13-55
+45            <intent-filter>
+45-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:29:13-32:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:30:17-69
+46-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:30:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:31:17-77
+48-->C:\Users\mhtar\Desktop\Projects\dictionary\android\app\src\main\AndroidManifest.xml:31:27-74
+49            </intent-filter>
+50        </activity>
+51
+52        <provider
+52-->[androidx.emoji2:emoji2:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\58d304d4be1b490eb1e9d208cd64297f\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+53            android:name="androidx.startup.InitializationProvider"
+53-->[androidx.emoji2:emoji2:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\58d304d4be1b490eb1e9d208cd64297f\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+54            android:authorities="com.offline.dictionary.androidx-startup"
+54-->[androidx.emoji2:emoji2:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\58d304d4be1b490eb1e9d208cd64297f\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+55            android:exported="false" >
+55-->[androidx.emoji2:emoji2:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\58d304d4be1b490eb1e9d208cd64297f\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+56            <meta-data
+56-->[androidx.emoji2:emoji2:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\58d304d4be1b490eb1e9d208cd64297f\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+57                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+57-->[androidx.emoji2:emoji2:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\58d304d4be1b490eb1e9d208cd64297f\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+58                android:value="androidx.startup" />
+58-->[androidx.emoji2:emoji2:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\58d304d4be1b490eb1e9d208cd64297f\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+59            <meta-data
+59-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\e70303b01c5448c4ff9902e6d27ea1de\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+60                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+60-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\e70303b01c5448c4ff9902e6d27ea1de\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+61                android:value="androidx.startup" />
+61-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\e70303b01c5448c4ff9902e6d27ea1de\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+62            <meta-data
+62-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+63                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+63-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+64                android:value="androidx.startup" />
+64-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+65        </provider>
+66
+67        <receiver
+67-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+68            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+68-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+69            android:directBootAware="false"
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+70            android:enabled="true"
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+71            android:exported="true"
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+72            android:permission="android.permission.DUMP" >
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+73            <intent-filter>
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+74                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+75            </intent-filter>
+76            <intent-filter>
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+77                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+78            </intent-filter>
+79            <intent-filter>
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+80                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+81            </intent-filter>
+82            <intent-filter>
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+83                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\mhtar\.gradle\caches\9.6.0\transforms\3cdd1d5b698aaae4cf6018d3079dc840\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+84            </intent-filter>
+85        </receiver>
+86    </application>
+87
+88</manifest>
